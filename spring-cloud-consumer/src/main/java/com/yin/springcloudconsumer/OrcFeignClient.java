@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @FeignClient(value = "orc-service", configuration = FeignConfig.class)
 public interface OrcFeignClient {
 
-    @GetMapping("/Home/hello")
+    @GetMapping("/home/hello")
     String hello();
 }
