@@ -112,6 +112,13 @@
         <module>dubbo-api</module>
         <module>dubbo-consumer</module>
         <module>spi-study</module>
+        <module>spring-cloud-zuul</module>
+        <module>spring-cloud-client</module>
+        <module>spring-cloud-consumer</module>
+        <module>spring-cloud-server</module>
+        <module>netty-client</module>
+        <module>netty-server</module>
+        <module>groovy-demo</module>
     </modules>
 
 </project>
