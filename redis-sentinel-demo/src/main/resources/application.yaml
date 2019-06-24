@@ -1,0 +1,7 @@
+server:
+  port: 8083
+spring:
+  redis:
+    sentinel:
+      master: mymaster
+      nodes: 172.21.186.236:26379,172.21.186.236:26380,172.21.186.236:26381
