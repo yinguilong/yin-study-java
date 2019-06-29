@@ -16,15 +16,20 @@ import org.springframework.web.bind.annotation.*;
 public class HomeController {
     @Autowired
     RedisTemplate<String, Object> redisTemplate;
+
     @RequestMapping("/")
-    public  String index(@RequestParam String a)
-    {
+    public String index(@RequestParam String a) {
         try {
-            redisTemplate.opsForValue().set("yin",a);
+            redisTemplate.opsForValue().set("yin", a);
         } catch (Exception e) {
             System.out.println(e);
+            return e.toString();
         }
 
-        return  a;
+        return a;
+    }
+    @RequestMapping("/hello")
+    public String hello() {
+        return "hello y";
     }
 }
