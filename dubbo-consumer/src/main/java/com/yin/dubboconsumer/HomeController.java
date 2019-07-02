@@ -1,7 +1,8 @@
 package com.yin.dubboconsumer;
 
-import com.alibaba.dubbo.config.annotation.Reference;
+
 import com.yin.api.DemoService;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +18,7 @@ public class HomeController {
     /**
      * shili
      */
-    @Reference()
+    @Reference(url = "dubbo://127.0.0.1:12345")
     private DemoService demoservice;
 
     @RequestMapping("/")
