@@ -30,6 +30,11 @@
             <artifactId>dubbo-spring-boot-starter</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-apache-dubbo-adapter</artifactId>
+            <version>${sentinel.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.dubbo</groupId>
@@ -45,6 +50,11 @@
             <artifactId>dubbo-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-transport-simple-http</artifactId>
+            <version>${sentinel.version}</version>
         </dependency>
     </dependencies>
 

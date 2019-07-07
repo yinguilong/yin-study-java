@@ -13,8 +13,12 @@ import org.springframework.stereotype.Component;
 @Service(interfaceClass = DemoService.class)
 @Component
 public class DemoServiceImpl implements  DemoService {
+    /**
+     * ss
+     */
+    private int i;
     @Override
     public void SayHello() {
-        System.out.println("hello yin");
+        System.out.println("hello yin"+(i++));
     }
 }

@@ -23,6 +23,11 @@ public class HomeController {
 
     @RequestMapping("/")
     public String hello() {
+        int i = 0;
+        while (i <= 4) {
+            i++;
+            demoservice.SayHello();
+        }
         demoservice.SayHello();
         return "haha";
     }
