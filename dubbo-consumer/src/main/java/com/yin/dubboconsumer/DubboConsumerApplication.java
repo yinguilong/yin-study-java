@@ -9,8 +9,11 @@ public class DubboConsumerApplication {
 
     public static void main(String[] args) {
 
+        String formTyreS = "21560R16";
+        String formTyre = formTyreS.substring(0, 3) + "/" + formTyreS.substring(3, 5) + " " + formTyreS.substring(5, 8);
         int[] arry = new int[]{34, 12, 43, 12, 5, 23, 8, 7, 56, 233, 89, 54};
         sort(arry, 0, arry.length-1);
+
         SpringApplication.run(DubboConsumerApplication.class, args);
     }
 
